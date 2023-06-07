@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beauty Scheduler - Cadastro</title>
+        <link rel="stylesheet" href="/src/styles/reset.css" />
+        <link rel="stylesheet" href="/src/styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="main_body">
+        <div>
+            <div class="title_container">
+                <h1>Perfil</h1>
+            </div>
+            <div class="lineImput">
+                <a class="label">Nome:</a>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Digite seu nome/salão"
+                />
+            </div>
+            <div class="lineImput">
+                <a class="label">Fone:</a>
+                <input
+                    type="phone"
+                    id="phone"
+                    placeholder="Digite seu telefone"
+                />
+            </div>
+            <div class="lineImput">
+                <a class="label">E-mail:</a>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                />
+            </div>
+            <div class="lineImput">
+                <a class="label">CPF/CNPJ:</a>
+                <input type="text" id="cpf" placeholder="Digite seu CPF/CNPJ" />
+            </div>
+            <div class="lineImput">
+                <a class="label">CEP:</a>
+                <input type="CEP" id="house" placeholder="Digite seu CEP" />
+            </div>
+            <div class="lineImput">
+                <a class="label">Número da residência:</a>
+                <input
+                    type="text"
+                    id="number"
+                    placeholder="Digite o nº da residência/salão"
+                />
+            </div>
+            <div class="checkboxcontainer">
+                <label class="switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                </label>
+                <div>Atende a domicilio</div>
+            </div>
+            <div class="lineImput">
+                <button
+                    class="button"
+                    id="btnSenhaProfissional"
+                    onclick="openCadastroSenha()"
+                >
+                    CADASTRAR
+                </button>
+            </div>
+            <div class="content_container">
+                <h3>
+                    Já possui conta?
+                    <a href="/src/screens/login.html">Faça o login</a>
+                </h3>
+            </div>
+        </div>
+
+        <script src="/script/script.js"></script>
+        <script>
+            function openCadastroSenha() {
+                window.open("/src/screens/cadastroSenhaCliente.html", "_self");
+            }
+        </script>
+    </body>
+</html>

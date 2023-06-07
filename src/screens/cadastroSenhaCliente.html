@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beauty Scheduler - Senha</title>
+        <link rel="stylesheet" href="/src/styles/reset.css" />
+        <link rel="stylesheet" href="/src/styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="main_body">
+        <div>
+            <div class="title_container">
+                <h1>Segurança</h1>
+            </div>
+            <h2>
+              <img
+                  class="security_logo"
+                  src="/src/img/security.svg"
+                  alt="logo segurança"
+              />
+          </h2>
+            <div class="lineImput">
+                <a class="label">Nome:</a>
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    required
+                />
+            </div>
+            <div class="lineImput">
+                <a class="label">Fone:</a>
+                <input
+                    type="password"
+                    id="confirmaSenha"
+                    placeholder="Confirme sua senha"
+                    required
+                />
+            
+            <div class="lineImput">
+                <button
+                    class="button"
+                    name="btnFind"
+                    id="btnCadastroSenhaClienteSucesso"
+                    onclick="openSenhaSucesso()"
+                >
+                    FINALIZAR CADASTRO
+                </button>
+            </div>
+            <div class="content_container">
+                <h3>
+                    Já possui conta?
+                    <a
+                        href="/src/screens/login.html"
+                        >Faça o login</a
+                    >
+                </h3>
+            </div>
+        </div>
+        <script>
+            function openSenhaSucesso() {
+                window.open("/src/screens/sucesso.html", "_self");
+            }
+        </script>
+    </body>
+</html>
